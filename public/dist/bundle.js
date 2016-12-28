@@ -2,30 +2,29 @@
 // ============================================================
 var app = angular.module("bash", ["ui.router"])
 .config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider){
-  
+
   $urlRouterProvider.otherwise('/');
-  
+
   $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: './app/views/home.html',
-        controller: 'home',
+        templateUrl: './app/views/home/home.html',
+        controller: 'homeCtrl',
       })
       .state('menu', {
-        url: '/',
-        templateUrl: './app/views/menu.html',
-        controller: 'menu',
+        url: '/menu',
+        templateUrl: './app/views/menu/menu.html',
+        controller: 'menuCtrl',
       })
       .state('contact', {
-        url: '/',
-        templateUrl: './app/views/contact.html',
-        controller: 'contact',
+        url: '/contact',
+        templateUrl: './app/views/contact/contact.html',
+        controller: 'contactCtrl',
       })
 
-  
-  
-}]);
 
+
+}]);
 
 // INITILIZE CONTROLLER
 // ============================================================
@@ -67,6 +66,16 @@ angular.module("bash").controller("contact", ["$scope", function($scope) {
 }]);
 // INITILIZE CONTROLLER
 // ============================================================
+angular.module("bash").controller("contactCtrl", ["$scope", function($scope) {
+  // VARIABLES
+  // ============================================================
+  $scope.test = "contact test"
+  // FUNCTIONS
+  // ============================================================
+}]);
+
+// INITILIZE CONTROLLER
+// ============================================================
 angular.module("bash").controller("home", ["$scope", function($scope) {
 
   // VARIABLES
@@ -80,6 +89,16 @@ angular.module("bash").controller("home", ["$scope", function($scope) {
 }]);
 // INITILIZE CONTROLLER
 // ============================================================
+angular.module("bash").controller("homeCtrl", ["$scope", function($scope) {
+  // VARIABLES
+  // ============================================================
+  $scope.test = "home test"
+  // FUNCTIONS
+  // ============================================================
+}]);
+
+// INITILIZE CONTROLLER
+// ============================================================
 angular.module("bash").controller("menu", ["$scope", function($scope) {
 
   // VARIABLES
@@ -91,6 +110,16 @@ angular.module("bash").controller("menu", ["$scope", function($scope) {
 
 
 }]);
+// INITILIZE CONTROLLER
+// ============================================================
+angular.module("bash").controller("menuCtrl", ["$scope", function($scope) {
+  // VARIABLES
+  // ============================================================
+  $scope.test = "menu test"
+  // FUNCTIONS
+  // ============================================================
+}]);
+
 angular.module('bash')
     .directive('baNav', function() {
         return {
@@ -104,3 +133,12 @@ angular.module('bash')
 };
 
 });
+// INITILIZE CONTROLLER
+// ============================================================
+angular.module("bash").controller("navCtrl", ["$scope", function($scope) {
+  // VARIABLES
+  // ============================================================
+  $scope.test = "nav test"
+  // FUNCTIONS
+  // ============================================================
+}]);

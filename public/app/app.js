@@ -2,27 +2,26 @@
 // ============================================================
 var app = angular.module("bash", ["ui.router"])
 .config(function($stateProvider, $urlRouterProvider){
-  
+
   $urlRouterProvider.otherwise('/');
-  
+
   $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: './app/views/home.html',
-        controller: 'home',
+        templateUrl: './app/views/home/home.html',
+        controller: 'homeCtrl',
       })
       .state('menu', {
-        url: '/',
-        templateUrl: './app/views/menu.html',
-        controller: 'menu',
+        url: '/menu',
+        templateUrl: './app/views/menu/menu.html',
+        controller: 'menuCtrl',
       })
       .state('contact', {
-        url: '/',
-        templateUrl: './app/views/contact.html',
-        controller: 'contact',
+        url: '/contact',
+        templateUrl: './app/views/contact/contact.html',
+        controller: 'contactCtrl',
       })
 
-  
-  
-});
 
+
+});
