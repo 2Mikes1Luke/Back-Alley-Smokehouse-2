@@ -1,0 +1,72 @@
+.homeHeadline{
+  width: 100%;
+  padding: 20px 0 0px 0;
+  text-align: center;
+}
+
+// SLIDESHOW
+
+.slideHolder{
+  width: 80%;
+  height: 40vh;
+  overflow: hidden;
+  background: $wht;
+  border: 20px solid $wht;
+  margin: 20px auto 20px;
+  box-shadow: 5px 5px 20px $blk;
+}
+
+.slide{
+  height: 100%;
+  width: 100%;
+  background-image: url(../app/images/brisket.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+// END SLIDESHOW
+
+// START CONTENT
+
+.homeContentBox{
+  padding: 20px;
+  position: relative;
+}
+
+.homeContentBorderBox{
+  height: 100%;
+  width: 100%;
+  border: 4px solid $cardinal;
+}
+
+.homeContentHeadline{
+  height: 30px;
+  text-align: center;
+  padding: 5px 0 0 0;
+  // background: blue;
+}
+
+.homeContentParagraph{
+  width: 100%;
+  padding: 10px;
+  min-height: 120px;
+  // background: green;
+}
+
+.homeContentFooter{
+  height: 30px;
+  text-align: center;
+  // background: orange;
+}
+
+.homePrice{
+  padding: 10px 20px 0 0;
+}
+
+.homeSchedule{
+  width: 100%;
+  padding: 10px;
+  min-height: 150px;
+}

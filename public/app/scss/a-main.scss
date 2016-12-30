@@ -64,17 +64,41 @@ $cardinal: #9e0c0c;
 $blk: #111111;
 $wht: white;
 
+.redTxt{
+  color: $cardinal;
+}
+
+.redBkg{
+  background: $cardinal;
+}
+
+.blkTxt{
+  color: $blk;
+}
+
+.blkBkg{
+  background: $blk;
+}
+
+.whtTxt{
+  color: $wht;
+}
+
+.whtBkg{
+  background: $wht;
+}
+
 .bkgtester{
-  background: lightgrey;
+  background-color: lightgrey;
+}
+.bkgtester1{
+  background-color: darkgrey;
 }
 .bkgtester2{
-  background: darkgrey;
+  background-color: grey;
 }
 .bkgtester3{
-  background: grey;
-}
-.bkgtester4{
-  background: dimgrey;
+  background-color: dimgrey;
 }
 
 
@@ -83,16 +107,87 @@ $wht: white;
 
 @import url('https://fonts.googleapis.com/css?family=Kalam|Special+Elite|Walter+Turncoat');
 
-$headlineFont: 'Walter Turncoat', serif;
+$headlineFont: 'Special Elite', serif;
 $paragraphFont: 'Kalam', serif;
 
 
 h1, h2, h3, h4, h5, h6{
   font-family: $headlineFont;
-  
+  color: $blk;
+}
+
+h1{
+  font-size: 7vw;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+h4{
+  font-size: 1.2em;
+}
+
+h5{
+  font-size: 1em;
+}
+
+h6{
+  font-size: .8em;
 }
 
 p{
   font-family: $paragraphFont;
 }
+
+.centerTxt{
+  text-align: center;
+}
+
+.headlineMargin{
+  margin-bottom: 10px;
+}
+
+// COMMON ELEMENTS
+// ===================================================
+.faded{
+  opacity: .8;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.flexBetween{
+  justify-content: space-between;
+}
+
+body{
+  background: $blk;
+}
+.mainContent{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../app/images/paperTexture.jpg);
+  background-repeat: repeat;
+  background-origin: content-box;
+  padding: 0;
+}
+
+.adminEditor{
+  height: 30px;
+  width: 30px;
+  background-color: $blk;
+}
+
+
 
