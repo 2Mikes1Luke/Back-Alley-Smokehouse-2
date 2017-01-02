@@ -5,6 +5,7 @@
   // background: $wht;
 }
 .menuSection{
+  
   @media (max-width: 700px){
     padding:100px 0 0 0;
   }
@@ -12,11 +13,70 @@
 
 .menuSectionTitle{
   width: 100%;
-  min-height: 100px;
-  background: $cardinal;
+  // min-height: 100px;
+  // background: $cardinal;
+  border: 4px solid $blk;
+}
+
+.menuContent{
+  padding: 10px 0 0 0;
 }
 
 .menuSectionTitleTxt{
   width: 100%;
-  padding: 20px 0 0px 0;
+  padding: 15px 0 0px 0;
+  background: $blk;
+}
+
+.menuSectionSubtitle{
+  padding: 10px 0 0px 0;
+}
+
+.menuBox{
+  margin: 10px 0;
+  // border: 4px solid $blk;
+}
+
+.menuBoxTitle{
+  background: $blk;
+  width: 100%;
+  padding: 10px 0 0 10px;
+}
+
+// full section  ========================================
+
+.menuBoxParagraph{
+  padding: 10px;
+}
+
+.menuBoxBottomBar{
+  text-align: right;
+  // background: $blk;
+}
+
+.menuBoxPrice{
+  padding: 10px 0 ;
+}
+
+
+// partial section  ========================================
+
+.menuBoxPartialBar{
+  border-bottom: 2px solid $blk;
+}
+
+.menuBoxPartialTitle{
+  padding: 10px 0 0 0;
+}
+
+.menuBoxPartialPrice{
+  padding: 15px 0 0 0;
+}
+
+// list section  ========================================
+
+.menuListPrice{
+  width: 100%;
+  text-align: center;
+  background: $blk;
 }

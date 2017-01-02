@@ -63,6 +63,7 @@ a{
 $cardinal: #9e0c0c;
 $blk: #111111;
 $wht: white;
+$bag: #c19a61;
 
 .redTxt{
   color: $cardinal;
@@ -86,6 +87,10 @@ $wht: white;
 
 .whtBkg{
   background: $wht;
+}
+
+.bagTxt{
+  color: $bag;
 }
 
 .bkgtester{
@@ -169,6 +174,10 @@ p{
 }
 .flexBetween{
   justify-content: space-between;
+}
+
+.flexEnd{
+  justify-content: flex-end;
 }
 
 body{
