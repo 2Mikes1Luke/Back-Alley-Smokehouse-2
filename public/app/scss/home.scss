@@ -2,12 +2,15 @@
   width: 100%;
   padding: 20px 0 0px 0;
   text-align: center;
+  @media (max-width: 700px){
+    display: none;
+  }
 }
 
 // SLIDESHOW
 
 .slideHolder{
-  width: 80%;
+  width: 80vw;
   height: 40vh;
   overflow: hidden;
   background: $wht;

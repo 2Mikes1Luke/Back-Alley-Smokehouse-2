@@ -1,0 +1,22 @@
+.menuHolder{
+  margin: 0 auto;
+  width: 90vw;
+  min-height: 200px;
+  // background: $wht;
+}
+.menuSection{
+  @media (max-width: 700px){
+    padding:100px 0 0 0;
+  }
+}
+
+.menuSectionTitle{
+  width: 100%;
+  min-height: 100px;
+  background: $cardinal;
+}
+
+.menuSectionTitleTxt{
+  width: 100%;
+  padding: 20px 0 0px 0;
+}
