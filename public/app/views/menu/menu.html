@@ -3,30 +3,85 @@
     
 
     <div class="menuHolder faded">
-      
+
           <!-- menu sections -->
           
           <div class="menuSection">
-            <div class="menuSectionTitle">
-              <h2 class="menuSectionTitleTxt centerTxt">From the Smoker</h2>
+              <!-- menu title -->
+              <div class="menuSectionTitle">
+                <h2 class="menuSectionTitleTxt centerTxt bagTxt">From the Smoker</h2>
+                <h4 class="menuSectionSubtitle centerTxt menuSubtitle1" ng-show="menuSubtitle1"> Comes with your choice of side </h4>
+                <h4 class="menuSectionSubtitle centerTxt menuSubtitle2" ng-show="menuSubtitle2"> Comes with your choice of side </h4>
+                <h4 class="menuSectionSubtitle centerTxt menuSubtitle3" ng-show="menuSubtitle3"> Comes with your choice of side </h4>
+              </div>
+              <!-- end menu title -->
+              
+              
+            <!-- content holder -->
+              <div class="menuContent">
+                
+                
+            <!-- full section -->
+            <div class="fullSection container-fluid" ng-show="fullSection">
+              <div class="row">
+                <!-- single menu item -->
+                <div class="menuBox col-sm-6">
+                  <h3 class="menuBoxTitle bagTxt">Pickled Duck Heads</h3>
+                  <p class="menuBoxParagraph">Freshly picked duck heads, instantly pickeled and aged for 12 years in vinegar and chewing tobacco juice (locally sourced).  Served on a hoagie bun.</p>
+                  <div class="menuBoxBottomBar flexRow flexEnd">
+                    <h4 class="menuBoxPrice">$10.93</h4>
+                  </div>
+                </div>
+                <!-- end single menu item -->
+              </div>
             </div>
+              <!-- end full section -->
+            
+            
+            <!-- partial section -->
+            <div class="partialSection container-fluid" ng-show="partialSection">
+              <div class="row">
+                
+
+              <!-- single menu item -->
+              <div class="menuBox col-sm-6">
+                <div class="menuBoxPartialBar flexRow flexBetween">
+                <h3 class="menuBoxPartialTitle ">Fried Pig Nostrils</h3>
+                <h4 class="menuBoxPartialPrice">$4.12</h4>
+                </div>
+              </div>
+              <!-- end single menu item -->
+              </div>
+            </div>
+              <!-- end partial section -->
+            
+            
+                  <!-- list section -->
+            <div class="listSection container-fluid" ng-show="listSection">
+                <div class="row">
+                <!-- single menu item -->
+              <div class="menuBox col-sm-4">
+                <div class="menuBoxPartialBar flexRow flexBetween">
+                <h3 class="menuBoxPartialTitle ">Poop Suace</h3>
+                </div>
+              </div>
+              <!-- end single menu item -->
+              </div>
+              <div class="menuListPrice">
+                <h4 class="menuBoxPartialPrice bagTxt">35¢</h4>
+              </div>
+            </div>
+                <!-- end list section -->
+                
+                
+                
+            </div>
+            <!-- end menu content -->
           </div>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+          <!-- end menu section -->
+
     </div>
-    
+    <!-- end menuholder -->
     
   </div>
 </div>
