@@ -1,0 +1,332 @@
+
+<div class="menuSectionModal flexColumn" ng-submit="saveMenuSection()" >
+  
+  <!-- headline -->
+  <h3 class="modalTitle centerTxt">Menu Section Editor</h3>
+  
+  <!-- section name -->
+  <div class="modalSelector flexRow flexEnd">
+    <h5 class="modalInputLabel">Section Name</h5>
+    <input class="modalInput" type="text" name="" ng-model="newMenuSection.title">
+  </div>
+  
+  <!-- initial subtitle adder -->
+  <div class="subtitleAdder flexRow flexCenter" ng-show="subtitleAdder1">
+    <h5 class="subtitleAdderLabel">Make a Subtitle (max 3)</h5>
+      <h2 class="subtitleAdderTxt" ng-click="subtitleAdder(1)">+</h2>
+  </div>
+  
+  <!-- section subtitle 1-->
+  <div class="flexColumn" ng-show="subtitle1">
+      <div class="modalSelector flexRow flexEnd" ng-show="subtitle1">
+          <h5 class="modalInputLabel">Subtitle 1</h5>
+          <input class="modalInput" type="text" name="" ng-model="newMenuSection.subtitle1">
+      </div>
+      <div class="subtitleAdder flexRow flexCenter" ng-show="subtitleAdder2">
+          <h5 class="subtitleAdderLabel">Add a Subtitle (max 3)</h5>
+          <h2 class="subtitleAdderTxt" ng-click="subtitleAdder(2)">+</h2>
+          <h2 class="subtitleAdderTxt"  ng-click="subtitleSubtractor(1)">-</h2>
+      </div>
+  </div>
+  <!-- section subtitle 2-->
+  <div class="flexColumn" ng-show="subtitle2">
+      <div class="modalSelector flexRow flexEnd" ng-show="subtitle2">
+          <h5 class="modalInputLabel">Subtitle 2</h5>
+          <input class="modalInput" type="text" name="" ng-model="newMenuSection.subtitle2">
+      </div>
+      <div class="subtitleAdder flexRow flexCenter" ng-show="subtitleAdder3">
+          <h5 class="subtitleAdderLabel">Add a Subtitle (max 3)</h5>
+          <h2 class="subtitleAdderTxt" ng-click="subtitleAdder(3)">+</h2>
+          <h2 class="subtitleAdderTxt"  ng-click="subtitleSubtractor(2)">-</h2>
+      </div>
+  </div>
+  <!-- section subtitle 3-->
+  <div class="flexColumn" ng-show="subtitle3">
+      <div class="modalSelector flexRow flexEnd" ng-show="subtitle3">
+          <h5 class="modalInputLabel">Subtitle 3</h5>
+          <input class="modalInput" type="text" name="" ng-model="newMenuSection.subtitle3">
+      </div>
+      <div class="subtitleAdder flexRow flexCenter" ng-show="subtitleAdder4">
+          <h5 class="subtitleAdderLabel">Remove a Subtitle (max 3)</h5>
+          <h2 class="subtitleAdderTxt"  ng-click="subtitleSubtractor(3)">-</h2>
+      </div>
+  </div>
+  <!--  selection graphics -->
+  <div class="sectonTypeSelectorContainer flexRow flexCenter">
+    
+    
+    <!-- first box -->
+      <div class="sectonTypeBox" ng-click="modalSwitcher(1)">
+        <!-- begin image -->
+        <div class="sectionTypeImage">
+          <div class="section1content flexColumn faded">
+            <!-- headlines -->
+            <div class="sectionHeadlineIndicator"></div>
+            <div class="sectionSubHeadlineIndicator"></div>
+            <!-- content -->
+            <div class="flexRow fullWidth flexWrap flexCenter">
+              <!-- content box -->
+              <div class="fullSectionContentBox flexColumn">
+                <div class="fullSectionContentTitle"></div>
+                <div class="fullSectionContentParagraph"></div>
+                <div class="fullSectionBottomBar flexRow">
+                  <div class="fullSectionBottomSpacer"></div>
+                  <div class="fullSectionBottomPrice"></div>
+                </div>
+              </div>
+              <!-- content box -->
+              <div class="fullSectionContentBox flexColumn">
+                <div class="fullSectionContentTitle"></div>
+                <div class="fullSectionContentParagraph"></div>
+                <div class="fullSectionBottomBar flexRow">
+                  <div class="fullSectionBottomSpacer"></div>
+                  <div class="fullSectionBottomPrice"></div>
+                </div>
+              </div>
+              <!-- content box -->
+              <div class="fullSectionContentBox flexColumn">
+                <div class="fullSectionContentTitle"></div>
+                <div class="fullSectionContentParagraph"></div>
+                <div class="fullSectionBottomBar flexRow">
+                  <div class="fullSectionBottomSpacer"></div>
+                  <div class="fullSectionBottomPrice"></div>
+                </div>
+              </div>
+              <!-- content box -->
+              <div class="fullSectionContentBox flexColumn">
+                <div class="fullSectionContentTitle"></div>
+                <div class="fullSectionContentParagraph"></div>
+                <div class="fullSectionBottomBar flexRow">
+                  <div class="fullSectionBottomSpacer"></div>
+                  <div class="fullSectionBottomPrice"></div>
+                </div>
+              </div>
+              <!-- content box -->
+              <div class="fullSectionContentBox flexColumn">
+                <div class="fullSectionContentTitle"></div>
+                <div class="fullSectionContentParagraph"></div>
+                <div class="fullSectionBottomBar flexRow">
+                  <div class="fullSectionBottomSpacer"></div>
+                  <div class="fullSectionBottomPrice"></div>
+                </div>
+              </div>
+              <!-- content box -->
+              <div class="fullSectionContentBox flexColumn">
+                <div class="fullSectionContentTitle"></div>
+                <div class="fullSectionContentParagraph"></div>
+                <div class="fullSectionBottomBar flexRow">
+                  <div class="fullSectionBottomSpacer"></div>
+                  <div class="fullSectionBottomPrice"></div>
+                </div>
+              </div>
+              <!-- end content boxes -->
+            </div>
+          </div>
+        </div>
+        <!-- end image -->
+        <h6 class="centerTxt">Full Section</h6>
+        <!-- button -->
+        <div class="sectionIndicatorButtonContainer" >
+          <div class="sectionIndicatorButtonBox">
+            <div class="sectionIndicatorButtonSelector" ng-show="modalFullSection"></div>
+          </div>
+        </div>
+        <!-- end button -->
+      </div>
+      
+      
+      <!-- second box -->
+      <div class="sectonTypeBox" ng-click="modalSwitcher(2)">
+        <!-- begin image -->
+        <div class="sectionTypeImage">
+          <div class="section1content flexColumn faded">
+            <!-- headlines -->
+            <div class="sectionHeadlineIndicator"></div>
+            <div class="sectionSubHeadlineIndicator"></div>
+            <!-- content-->
+            <div class="flexRow fullWidth flexWrap flexCenter">
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+              <!-- content box -->
+              <div class="partialSectionBox flexRow flexEnd">
+                <div class="partialSectionTitle"></div>
+                <div class="partialSectionPrice"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end image -->
+        <h6 class="centerTxt">Partial</h6>
+        <!-- button -->
+        <div class="sectionIndicatorButtonContainer">
+          <div class="sectionIndicatorButtonBox">
+            <div class="sectionIndicatorButtonSelector"  ng-show="modalPartialSection"></div>
+          </div>
+        </div>
+        <!-- end button -->
+      </div>
+      
+      
+      <!-- third box -->
+      <div class="sectonTypeBox" ng-click="modalSwitcher(3)">
+        <!-- begin image -->
+        <div class="sectionTypeImage">
+          <div class="section1content flexColumn faded">
+            <!-- headlines -->
+            <div class="sectionHeadlineIndicator"></div>
+            <div class="sectionSubHeadlineIndicator"></div>
+            <!-- content -->
+            <div class="flexRow fullWidth flexWrap flexCenter">
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- content box -->
+              <div class="listBox">
+                <div class="listTitle"></div>
+              </div>
+              <!-- price bar -->
+              <div class="listPriceBar"></div>
+            </div>
+            <!-- end content -->
+          </div>
+
+        </div>
+        <!-- end image -->
+        <h6 class="centerTxt">List</h6>
+        <!-- button -->
+        <div class="sectionIndicatorButtonContainer">
+          <div class="sectionIndicatorButtonBox">
+            <div class="sectionIndicatorButtonSelector" ng-show="modalListSection"></div>
+          </div>
+        </div>
+        <!-- end button -->
+      </div>
+  </div>
+  <!-- end selection graphics -->
+  
+  <!-- item price for list mode-->
+  <div class=" itemInputContainer flexRow flexEnd" ng-show="modalListSection" >
+    <h5 class="modalInputLabel">Group Price</h5>
+    <input class="modalInput" type="number" name="price" ng-model="newMenuSection.groupprice" >
+  </div>
+  
+  <!-- start sumbit buttons -->
+  <div class="flexRow flexCenter">
+    <div class="sectionButtonHolder flexRow flexEnd">
+      <h5 class="modalInputLabel rightTxt">Submit</h5>
+      <!-- button -->
+      <div class="sectionIndicatorButtonContainer">
+        <div class="sectionIndicatorButtonBox">
+          <div class="sumbitIndicator" ng-click="saveMenuSection()"></div>
+        </div>
+      </div>
+      <!-- end button -->
+    </div>
+    <div class="sectionButtonHolder flexRow flexEnd">
+      <h5 class="modalInputLabel rightTxt">Cancel</h5>
+      <!-- button -->
+      <div class="sectionIndicatorButtonContainer">
+        <div class="sectionIndicatorButtonBox">
+          <div class="sumbitIndicator" ng-click="modalToggler=!modalToggler"></div>
+        </div>
+      </div>
+      <!-- end button -->
+    </div>
+  </div>
+  <!-- end sumbit buttons -->
+  
+</div>
