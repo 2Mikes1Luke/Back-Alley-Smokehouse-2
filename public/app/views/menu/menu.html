@@ -1,4 +1,4 @@
-<div class="container-fluid ">
+<div class="container-fluid " >
   <div class="mainContent">
     
 
@@ -83,5 +83,18 @@
     </div>
     <!-- end menuholder -->
     
+    <!--  start modals -->
+    <!-- ============================================================= -->
+    
+    <div class="backgroundBlocker" ng-show="modalToggler" ng-click="modalToggler=!modalToggler"></div>
+    <div class="modalBox flexColumn" ng-show="modalToggler">
+      
+      <!--  menu section modal -->
+      <menu-section ng-show="menuSectionModal"></menu-section>
+      <!--  menu item modal-->
+      <menu-item ng-show="menuItemModal"></menu-item>
+      <!--  menu item modal-->
+      
+    </div>
   </div>
 </div>

@@ -55,7 +55,8 @@
 }
 
 .menuBoxPrice{
-  padding: 10px 0 ;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 
@@ -70,7 +71,7 @@
 }
 
 .menuBoxPartialPrice{
-  padding: 15px 0 0 0;
+  padding: 8px 0 0 0;
 }
 
 // list section  ========================================
@@ -79,4 +80,243 @@
   width: 100%;
   text-align: center;
   background: $blk;
+}
+
+
+// MODALS (Common elements on a-Main.scss)  ========================================
+
+.menuSectionModal{
+
+}
+
+.modalSectionTypeBox{
+  margin: 20px 0 0 0;
+  
+}
+
+.modalSelector{
+  margin: 20px 0 0 0;
+}
+
+.sectonTypeSelectorContainer{
+  width: 90px;
+  margin: 20px auto;
+}
+
+.sectonTypeBox{
+  flex-grow: 1;
+  min-height: 160px;
+  margin: 0 10px 0 10px;
+  &:hover{
+    box-shadow: 5px 5px 5px lightgrey;
+  }
+  @media(max-width: 400px){
+    margin: 0;
+    &:hover{
+      box-shadow: none;
+    }
+  }
+
+}
+
+.sectionTypeImage{
+  width: 100px;
+  min-height: 120px;
+  margin: 10px auto;
+  background-color: $bag;
+  position: relative;
+  padding: 10px  0 0 0;
+}
+
+.section1content{
+  width: 94px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+.sectionHeadlineIndicator{
+  width: 100%;
+  height: 10px;
+  background: $blk;
+}
+
+.sectionSubHeadlineIndicator{
+  width: 100%;
+  height: 8px;
+  border: 2px solid $blk;
+}
+
+// full section
+
+
+.fullSectionContentBox{
+  width: 41px;
+  height: 25px;
+  margin: 2px;
+}
+
+.fullSectionContentTitle{
+  width: 100%;
+  height: 5px;
+  background: $blk;
+}
+
+.fullSectionContentParagraph{
+  width: 37px;
+  height: 13px;
+  margin: 2px auto;
+  background: $blk;
+  opacity: .5;
+}
+
+.fullSectionBottomBar{
+  width: 100%;
+  height: 4px;
+  margin: 1px auto;
+}
+
+.fullSectionBottomSpacer{
+  width: 80%;
+  height: 100%;
+}
+
+.fullSectionBottomPrice{
+  width: 20%;
+  height: 100%;
+  background: $blk;
+}
+
+// partial section
+
+.partialSectionBox{
+  width: 41px;
+  height: 6px;
+  margin: 2px;
+  border-bottom: 2px solid $blk;
+}
+.partialSectionTitle{
+  width: 30px;
+  height: 100%;
+  background: $blk;
+  margin-right: 3px;
+  opacity: .5;
+}
+.partialSectionPrice{
+  width: 8px;
+  height: 100%;
+  background: $blk;
+}
+
+
+// list section
+.listBox{
+  width: 41px;
+  height: 6px;
+  margin: 2px;
+  border-bottom: 2px solid $blk;
+}
+
+.listTitle{
+  width: 30px;
+  height: 100%;
+  background: $blk;
+  margin-right: 3px;
+  opacity: .5;
+}
+
+.listPriceBar{
+  width: 100%;
+  height: 5px;
+  background: $blk;
+}
+
+//Indicator Button
+
+.sectionIndicatorButtonContainer{
+  height: 24px;
+  width: 100%;
+  margin: 5px 0 10px 0;
+}
+
+.sectionIndicatorButtonBox{
+  height: 22px;
+  width: 22px;
+  margin: 0 auto;
+  background: $wht;
+  position: relative;
+  border: 2px solid $blk;
+}
+
+.sectionIndicatorButtonSelector{
+  height: 16px;
+  width: 16px;
+  background: $cardinal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.sumbitIndicator{
+  height: 16px;
+  width: 16px;
+  background: $wht;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+  &:hover{
+    background: $cardinal;
+  }
+}
+
+
+.subtitleAdder{
+  height: 30px;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.subtitleAdderLabel{
+  padding: 10px 10px 0 0;
+}
+
+.subtitleAdderTxt{
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: -3px 10px 0 10px;
+  &:hover{
+    color: $cardinal;
+    cursor: pointer;
+  }
+}
+
+
+// modal sumbit buttons
+
+.sectionButtonHolder{
+  width: 130px;
+  height: 30px;
+}
+
+
+//item modal
+
+.itemInputContainer{
+  margin: 10px 0 10px 0;
+}
+
+.itemDescription{
+  height: 150px;
+  width: 100%;
+  padding: 2px 0 0 5px;
+  border: 2px solid darkgrey;
+  color: $blk;
+  &:focus{
+    border: 2px solid $blk;
+     outline:none;
+  }
 }

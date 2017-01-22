@@ -1,0 +1,47 @@
+<div class="menuItemModal flexColumn" ng-submit="saveMenuItem()">
+  
+  <!-- headline -->
+  <h3 class="modalTitle centerTxt">Menu Item Editor</h3>
+  
+  <!-- item title-->
+  <div class=" itemInputContainer flexRow flexEnd"  >
+    <h5 class="modalInputLabel">Item Title</h5>
+    <input class="modalInput" type="text" name="title" ng-model="newItem.title">
+  </div>
+  <!-- item price-->
+  <div class=" itemInputContainer flexRow flexEnd" ng-show="showItemPrice" >
+    <h5 class="modalInputLabel">Item Price</h5>
+    <input class="modalInput" type="number" name="price" ng-model="newItem.price" >
+  </div>
+  <!-- item description-->
+  <div class=" itemInputContainer flexColumn centerTxt" ng-show="showItemDescription" >
+    <h5 class="modalInputLabel">Item Description</h5>
+    <textarea class="itemDescription" name="description"  ng-model="newItem.description" ></textarea>
+  </div>
+  
+  <!-- start sumbit buttons -->
+  <div class="flexRow flexCenter">
+    <div class="sectionButtonHolder flexRow flexEnd">
+      <h5 class="modalInputLabel rightTxt">Submit</h5>
+      <!-- submit button -->
+      <div class="sectionIndicatorButtonContainer">
+        <div class="sectionIndicatorButtonBox">
+          <div class="sumbitIndicator" ng-click="saveMenuItem()"></div>
+        </div>
+      </div>
+      <!-- end button -->
+    </div>
+    <div class="sectionButtonHolder flexRow flexEnd">
+      <h5 class="modalInputLabel rightTxt">Cancel</h5>
+      <!-- cancel button -->
+      <div class="sectionIndicatorButtonContainer">
+        <div class="sectionIndicatorButtonBox">
+          <div class="sumbitIndicator" ng-click="modalToggler=!modalToggler"></div>
+        </div>
+      </div>
+      <!-- end button -->
+    </div>
+  </div>
+  <!-- end sumbit buttons -->
+  
+</div>

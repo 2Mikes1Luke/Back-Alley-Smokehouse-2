@@ -107,6 +107,7 @@ $bag: #c19a61;
 }
 
 
+
 // FONTS
 // ===================================================
 
@@ -153,6 +154,14 @@ p{
   text-align: center;
 }
 
+.rightTxt{
+  text-align: right;
+}
+
+.leftTxt{
+  text-align: left;
+}
+
 .headlineMargin{
   margin-bottom: 10px;
 }
@@ -180,6 +189,14 @@ p{
   justify-content: flex-end;
 }
 
+.flexCenter{
+  justify-content: center;
+}
+
+.flexWrap{
+  flex-wrap: wrap;
+}
+
 body{
   background: $blk;
 }
@@ -198,5 +215,69 @@ body{
   background-color: $blk;
 }
 
+.fullWidth{
+  width: 100%;
+}
 
+// MODAL COMMON ELEMENTS
+// ===================================================
 
+  $modalMin: 400px;
+  $modalMinPositioner: 200px;
+  
+  $modalSmallMin: 320px;
+  $modalSmallMinPositioner: 160px;
+
+  
+  .backgroundBlocker{
+    height: 100%;
+    width: 100%;
+    background: $blk;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  
+  .modalBox{
+    background: $wht;
+    min-height: $modalMin;
+    min-width: $modalMin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -$modalMinPositioner;
+    margin-left:  -$modalMinPositioner;
+    z-index: 30;
+    @media(max-width: 400px){
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-height: $modalSmallMin;
+      min-width: $modalSmallMin;
+      margin-top: -$modalSmallMinPositioner;
+      margin-left: -$modalSmallMinPositioner;
+    }
+  }
+
+.modalTitle{
+  margin: 20px 0 0 0;
+}
+
+.modalInputLabel{
+  padding: 10px 0 0 0;
+}
+
+.modalInput{
+  width: 180px;
+  height: 30px;
+  padding: 2px 0 0 5px;
+  margin: 0 20px 0 10px;
+  border: 2px solid darkgrey;
+  color: $blk;
+  &:focus{
+    border: 2px solid $blk;
+     outline:none;
+  }
+}
